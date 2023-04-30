@@ -2,6 +2,8 @@ import {Button, Container, ThemeProvider} from '@mui/material'
 import { useEffect } from 'react';
 import theme from './styles/theme';
 import Appbar from './components/appbar';
+import Banner from './components/banner';
+import Promotions from './components/promotions';
 
 function App() {
 
@@ -17,19 +19,20 @@ function App() {
          background: '#fff'
        }}
       >
-       {
-         <Appbar/>
-         /*
-         Banner
-         Promotions
+       
+         <Appbar />
+         <Banner />
+         <Promotions/>
+         {
+       /*
          title
          Products
          footer
          searchbox
          appdrawer
          */
-       }
-       <Button variant='contained'>Test</Button>
+         }
+      
       </Container>
       
     </ThemeProvider>
