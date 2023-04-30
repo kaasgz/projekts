@@ -1,6 +1,7 @@
 import {Button, Container, ThemeProvider} from '@mui/material'
 import { useEffect } from 'react';
 import theme from './styles/theme';
+import Appbar from './components/appbar';
 
 function App() {
 
@@ -17,12 +18,12 @@ function App() {
        }}
       >
        {
+         <Appbar/>
          /*
-         appbar
-         banner
+         Banner
          Promotions
          title
-         products
+         Products
          footer
          searchbox
          appdrawer
