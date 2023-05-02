@@ -1,9 +1,10 @@
-import {Button, Container, ThemeProvider} from '@mui/material'
+import {Box, Button, Container, ThemeProvider, Typography} from '@mui/material'
 import { useEffect } from 'react';
 import theme from './styles/theme';
 import Appbar from './components/appbar';
 import Banner from './components/banner';
 import Promotions from './components/promotions';
+import Products from './components/products';
 
 function App() {
 
@@ -23,6 +24,10 @@ function App() {
          <Appbar />
          <Banner />
          <Promotions/>
+         <Box display={'flex'} justifyContent={'center'} sx={{padding:4}}>
+            <Typography variant='h4'>Our Products</Typography>
+         </Box>
+         <Products/>
          {
        /*
          title
