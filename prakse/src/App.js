@@ -5,6 +5,9 @@ import Appbar from './components/appbar';
 import Banner from './components/banner';
 import Promotions from './components/promotions';
 import Products from './components/products';
+import Footer from './components/footer';
+import AppDrawer from './components/drawer';
+import { UIProvider } from './context/ui';
 
 function App() {
 
@@ -20,6 +23,8 @@ function App() {
          background: '#fff'
        }}
       >
+       <UIProvider>
+
        
          <Appbar />
          <Banner />
@@ -28,16 +33,16 @@ function App() {
             <Typography variant='h4'>Our Products</Typography>
          </Box>
          <Products/>
+         <Footer/>
+         <AppDrawer/>
          {
        /*
-         title
-         Products
-         footer
+
          searchbox
-         appdrawer
+     
          */
          }
-      
+      </UIProvider>
       </Container>
       
     </ThemeProvider>

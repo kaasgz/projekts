@@ -1,4 +1,5 @@
-import {createTheme} from "@mui/material/styles";
+import {createTheme } from "@mui/material/styles";
+import {lighten } from "polished";
 export const Colors = {
     primary: "#5f2c3e",
     secondary: "#d1adcc",
@@ -11,7 +12,8 @@ export const Colors = {
     muted: "#abafb3",
     border: "#DDDFE1",
     inverse: "#2F3D4A",
-    shaft: "#333",
+    //shaft: "#333",
+    footer:"#333",
     ///////////////
     // Grays
     ///////////////
@@ -40,7 +42,43 @@ export const Colors = {
                         disableRipple: true,
                         disableElevation: true
                     }
-                }
+                },
+                MuiDrawer: {
+                    styleOverrides: {
+                      paper: {
+                        width: 250,          
+                        background: Colors.primary,
+                        color: Colors.secondary,
+                        borderRight: `1px solid ${Colors.secondary}`
+                      }
+                    }
+                  },
+                MuiDivider: {
+                    styleOverrides: {
+                      root: {
+                        borderColor: lighten(0.4, Colors.primary)
+                      }
+                    }
+                  },
+                MyShopButton:{
+                    styleOverrides:{
+                        root:{
+                            color: Colors.white
+                        },
+                        primary:{
+                            background: Colors.primary,
+                            "&:hover":{
+                                background: lighten(0.05, Colors.primary),
+                            }},
+                        secondary:{
+                                background: Colors.secondary,
+                            "&:hover":{
+                                background: lighten(0.05, Colors.secondary),
+                            }
+                            },
+                        
+                    }
+                },
             }
         
   });

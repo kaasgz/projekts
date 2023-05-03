@@ -1,4 +1,4 @@
-import {Typography, Box, List } from "@mui/material";
+import {Typography, Box, List, IconButton } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import "@fontsource/montez";
 import { Colors } from "../theme";
@@ -20,6 +20,7 @@ export const AppbarHeader = styled(Typography)(() => ({
     fontFamily: '"Montez", "cursive"',
     color: Colors.secondary,
 
+
 }));
 
 export const MyList = styled(List)(({type}) => ({
@@ -29,13 +30,9 @@ export const MyList = styled(List)(({type}) => ({
   alignItems: "center",
 }));
 
-export const ActionIconsContainerDesktop = styled(Box)(()=>({
-    flexGrow: 0 
-}));
-
-export const ActionIconsContainerMobile = styled(Box)(()=>({
+export const ActionIconsContainerMobile = styled(Box)(() => ({
     display: 'flex',
-    background: Colors.shaft,
+    background: Colors.footer,
     position: "fixed",
     bottom: 0,
     left: 0,
@@ -43,4 +40,15 @@ export const ActionIconsContainerMobile = styled(Box)(()=>({
     alignItems: 'center',
     zIndex: 99,  
     borderTop: `1px solid ${Colors.border}`
-}));
+  }));
+  
+  export const ActionIconsContainerDesktop = styled(Box)(() => ({
+    flexGrow: 0,
+  }));
+
+export const DrawerCloseButton = styled(IconButton)(() => ({
+    position: 'absolute',
+    top: 10,
+    left: '250px',
+    zIndex: 1999,      
+  }));
