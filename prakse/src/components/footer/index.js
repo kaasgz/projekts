@@ -33,9 +33,10 @@ export default function Footer(){
                     mt:4,
                     color: Colors.dove_gray
                 }}>
-                    <FacebookIcon sx={{mr:1}}/>
-                    <TwitterIcon sx={{mr:1}}/>
-                    <InstagramIcon />
+                    <a href="https://www.facebook.com/"><FacebookIcon sx={{mr:1}}/></a>
+                    <a href="https://twitter.com/"><TwitterIcon sx={{mr:1}}/></a>
+                    <a href="https://www.instagram.com/"><InstagramIcon /></a>
+
                 </Box>
             </Grid>
             <Grid item md={6} lg={2}>
