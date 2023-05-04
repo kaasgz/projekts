@@ -13,10 +13,10 @@ export default function AppbarDesktop({matches}){
        <AppbarContainer>
         <AppbarHeader>My bags</AppbarHeader>
         <MyList type="row">
-            <ListItemText primary="Home"/>
-            <ListItemText primary="Categories"/>
-            <ListItemText primary="Products"/>
-            <ListItemText primary="Contact Us"/>
+        <ListItemText primary="Home"/>
+        <ListItemText primary="Categories"/>
+        <ListItemText primary="Products"/>
+        <ListItemText primary="Contact Us"/>
             
             <ListItemButton onClick={() => setShowSearchBox(true)}>
                 <ListItemIcon>

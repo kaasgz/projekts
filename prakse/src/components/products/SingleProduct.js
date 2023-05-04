@@ -4,9 +4,13 @@ import ProductMeta from "./ProductMeta";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import ShareIcon from "@mui/icons-material/Share";
 import FitScreenIcon from "@mui/icons-material/FitScreen";
+import useDialogModal from "../../hooks/useDialogModal";
+import ProductDetail from "../productdetail";
 
 export default function SingleProduct({product, matches}){
 
+
+    const [ProductDetailDialog, showProductDetailDialog, closeProductDialog] = useDialogModal(ProductDetail);
 
     return (
     
@@ -22,13 +26,14 @@ export default function SingleProduct({product, matches}){
                     <ProductActionButton>
                         <ShareIcon color="primary"/>
                     </ProductActionButton>
-                    <ProductActionButton>
+                    <ProductActionButton onClick={()=>showProductDetailDialog()}>
                         <FitScreenIcon color="primary"/>
                     </ProductActionButton>
                 </Stack>
             </ProductActionsWrapper>
         </Product>
         <ProductAddToCart variant="contained">Add to cart</ProductAddToCart>
+        <ProductDetailDialog product={product}/>
         </>
     )
 }
