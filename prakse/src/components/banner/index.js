@@ -8,11 +8,11 @@ export default function Banner(){
 
     return (
         <BannerContainer>
-            <BannerImage src="/images/banner/banner.png"></BannerImage>
+            <BannerImage src="/images/banner/boots.webp"></BannerImage>
             <BannerContent>
                 <Typography variant="h6">Huge Collection</Typography>
                 <BannerTitle variant="h2">
-                    New Bags
+                    New Boots
                 </BannerTitle>
                 <BannerDescription variant="subtitle">
             Torem ipsum dolor sit amet, consectetur adipisicing elitsed do eiusmo

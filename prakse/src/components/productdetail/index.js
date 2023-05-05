@@ -41,7 +41,7 @@ export default function ProductDetail({ open, onClose, product }) {
                 display={"flex"}
                 alignItems="center"
                 justifyContent={"space-between"}>
-                   Product title
+                   {product.name}
                 <IconButton onClick={onClose}>
                     <CloseIcon />
                 </IconButton>
@@ -54,7 +54,7 @@ export default function ProductDetail({ open, onClose, product }) {
                     </Product>
                     <ProductDetailInfoWrapper>
                         <Typography variant="subtitle1">
-                            SKU 123
+                            #aabb8899881
                         </Typography>
                         <Typography variant="subtitle1">
                             Avalibality: 5 in stock

@@ -15,7 +15,7 @@ export default function IncDec() {
         <IconButton
           sx={{
             borderRadius: 0,
-            background: `${Colors.secondary}`,
+            background: `${Colors.white}`,
           }}
           onClick={() => setValue(clampV(value - 1))}
         >

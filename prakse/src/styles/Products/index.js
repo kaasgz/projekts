@@ -36,7 +36,7 @@ export const ProductFavButton = styled(ProductActionButton, {shouldForwardProp:(
     [theme.breakpoints.up("md")]: {
       position: "absolute",
       right: 0,
-      top: 0,
+      top: 30,
     },
   }));
 

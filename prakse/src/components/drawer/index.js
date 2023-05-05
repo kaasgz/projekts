@@ -21,13 +21,13 @@ export default function AppDrawer(){
             <CloseIcon
               sx={{
                 fontSize: "2.5rem",
-                color: lighten(0.09, Colors.secondary),
+                color: lighten(0.09, Colors.white),
               }}
             />
           </DrawerCloseButton>
         )}
         <Drawer open={drawerOpen}>
-            <List>
+            <List sx={{color: Colors.white}}>
                 <ListItemButton>
                     <ListItemText>Home</ListItemText>
                 </ListItemButton>

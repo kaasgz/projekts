@@ -2,7 +2,7 @@ import {Typography, Box, List, IconButton } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import "@fontsource/montez";
 import { Colors } from "../theme";
-//container
+
 export const AppbarContainer = styled(Box)(()=>({
 
     display:'flex',
@@ -12,7 +12,7 @@ export const AppbarContainer = styled(Box)(()=>({
     padding:'2px 8px'
 }));
 
-//header
+
 export const AppbarHeader = styled(Typography)(() => ({
     padding: "4px",
     flexGrow: 1,
